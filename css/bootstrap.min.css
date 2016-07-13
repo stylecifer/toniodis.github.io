@@ -113,7 +113,7 @@ input[type=checkbox],input[type=radio] {
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
-	padding:0
+	padding:0;
 }
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
 	height:auto
@@ -1015,6 +1015,7 @@ td,th {
 	-moz-box-sizing:border-box;
 	box-sizing:border-box
 }
+>>>>>>> first
 :after,:before {
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -2233,6 +2234,7 @@ input[type=checkbox],input[type=radio] {
 	margin:4px 0 0;
 	margin-top:1px\9;
 	line-height:normal
+
 }
 input[type=file] {
 	display:block

@@ -11,6 +11,7 @@ body {
 }
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+
 }
 hr {
   border-color: #f05f40;
@@ -36,7 +37,9 @@ h3,
 h4,
 h5,
 h6 {
+
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+
 }
 p {
   font-size: 16px;
@@ -161,7 +164,6 @@ header .header-content {
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
-  font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
@@ -170,12 +172,10 @@ header .header-content .header-content-inner hr {
   margin: 30px auto;
 }
 header .header-content .header-content-inner p {
-  font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   margin-bottom: 50px;
 }
-@media (min-width: 768px) {
   header {
     min-height: 100%;
   }
@@ -198,18 +198,12 @@ header .header-content .header-content-inner p {
     margin-left: auto;
     margin-right: auto;
   }
-}
 .section-heading {
   margin-top: 0;
 }
 .service-box {
   max-width: 400px;
   margin: 50px auto 0;
-}
-@media (min-width: 992px) {
-  .service-box {
-    margin: 20px auto 0;
-  }
 }
 .service-box p {
   margin-bottom: 0;
@@ -264,7 +258,7 @@ header .header-content .header-content-inner p {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
-}
+
 .call-to-action h2 {
   margin: 0 auto 20px;
 }
