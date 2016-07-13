@@ -110,10 +110,10 @@ input {
 	line-height:normal
 }
 input[type=checkbox],input[type=radio] {
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-	padding:0
+	/*! -webkit-box-sizing:border-box; */
+	/*! -moz-box-sizing:border-box; */
+	/*! box-sizing:border-box; */
+	/*! padding:0 */
 }
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
 	height:auto
@@ -1010,11 +1010,6 @@ td,th {
 .glyphicon-menu-up:before {
 	content:"\e260"
 }
-* {
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box
-}
 :after,:before {
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -1025,7 +1020,6 @@ html {
 	-webkit-tap-highlight-color:rgba(0,0,0,0)
 }
 body {
-	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size:14px;
 	line-height:1.42857143;
 	color:#333;
@@ -1108,7 +1102,6 @@ hr {
 }
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
 	font-family:inherit;
-	font-weight:500;
 	line-height:1.1;
 	color:inherit
 }
@@ -2230,9 +2223,9 @@ input[type=search] {
 	box-sizing:border-box
 }
 input[type=checkbox],input[type=radio] {
-	margin:4px 0 0;
-	margin-top:1px\9;
-	line-height:normal
+	/*! margin:4px 0 0; */
+	/*! margin-top:1px\9; */
+	/*! line-height:normal */
 }
 input[type=file] {
 	display:block
