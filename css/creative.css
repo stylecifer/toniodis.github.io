@@ -9,8 +9,75 @@ body {
   height: 100%;
   width: 100%;
 }
+@font-face {
+    font-family: 'toniodisicon';
+    src:    url('../fonts/toniodisicon.eot?ku95n');
+    src:    url('../fonts/toniodisicon.eot?ku95n#iefix') format('embedded-opentype'),
+        url('../fonts/toniodisicon.ttf?ku95n') format('truetype'),
+        url('../fonts/toniodisicon.woff?ku95n') format('woff'),
+        url('../fonts/toniodisicon.svg?ku95n#toniodisicon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'toniodisicon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.soic:before{
+    margin-right: 1%;
+    font-size: 3.3em;
+    opacity: 0;
+    -webkit-transition: opacity ease-in 0.4s 0.8s;
+    -moz-transition: opacity ease-in 0.4s 0.8s;
+    -o-transition: opacity ease-in 0.4s 0.8s;
+    -ms-transition: opacity ease-in 0.4s 0.8s;
+    transition: opacity ease-in 0.4s 0.8s;
+}
+.icon-toniodis:before {
+    content: "\e900";
+}
+.icon-facebook:before {
+    content: "\e901";
+}
+.icon-twitter:before {
+    content: "\e902";
+}
+.icon-vine:before {
+    content: "\e903";
+}
+.icon-youtube:before {
+    content: "\e904";
+}
+.icon-github:before {
+    content: "\e905";
+}
+.icon-linkedin:before {
+    content: "\e906";
+}
+.toniodis__logo{
+  display: block;
+}
+.toniodis__logo h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+.Profile-link span {
+    margin-right: 8px;
+}
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Fira Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
   border-color: #f05f40;
@@ -36,7 +103,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Fira Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 p {
   font-size: 16px;
@@ -65,14 +132,14 @@ aside {
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Fira Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: #f05f40;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Fira Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -99,6 +166,290 @@ aside {
 .navbar-default .nav > li.active > a:hover,
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
+}
+.sp-slideshow {
+  position: relative;
+  margin:0;
+  padding: 0;
+  min-width: 260px;
+  height: 100vh;
+
+}
+.sp-content {
+  background: #7d7f72;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sp-parallax-bg {
+  background: url(../img/dibujalo-brand-bg.png) no-repeat scroll 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4540px;
+  height: 1080px;
+  overflow: hidden;
+}
+
+.sp-slideshow input {
+    position: absolute;
+  bottom: 15px;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  z-index: 1001;
+  cursor: pointer;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.sp-slideshow input + label {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    display: block;
+    z-index: 1000;
+    border: 3px solid #fff;
+    border: 3px solid rgba(255,255,255,0.9);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background-color linear 0.1s;
+    -moz-transition: background-color linear 0.1s;
+    -o-transition: background-color linear 0.1s;
+    -ms-transition: background-color linear 0.1s;
+    transition: background-color linear 0.1s;
+}
+.sp-slideshow input:checked + label {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.sp-selector-1, .button-label-1 {
+    margin-left: -50px;
+}
+
+.sp-selector-2, .button-label-2 {
+    margin-left: -30px;
+}
+
+.sp-selector-3, .button-label-3 {
+    margin-left: -10px;
+}
+
+.sp-selector-4, .button-label-4 {
+    margin-left: 10px;
+}
+
+.sp-selector-5, .button-label-5 {
+    margin-left: 30px;
+}
+
+.sp-selector-6, .button-label-6 {
+    margin-left: 50px;
+}
+.sp-arrow {
+  position: absolute;
+  top: 50%;
+  width: 28px;
+  height: 38px;
+  margin-top: -19px;
+  display: none;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 1000;
+  background: transparent url(../img/arrows.png) no-repeat;
+  -webkit-transition: opacity linear 0.3s;
+    -moz-transition: opacity linear 0.3s;
+    -o-transition: opacity linear 0.3s;
+    -ms-transition: opacity linear 0.3s;
+    transition: opacity linear 0.3s;
+}
+.sp-arrow:hover{
+  opacity: 1;
+}
+.sp-arrow:active{
+  margin-top: -18px;
+}
+
+.sp-selector-1:checked ~ .sp-arrow.sp-a2,
+.sp-selector-2:checked ~ .sp-arrow.sp-a3,
+.sp-selector-3:checked ~ .sp-arrow.sp-a4,
+.sp-selector-4:checked ~ .sp-arrow.sp-a5,
+.sp-selector-5:checked ~ .sp-arrow.sp-a6 {
+  right: 15px;
+  display: block;
+  background-position: top right;
+}
+.sp-selector-2:checked ~ .sp-arrow.sp-a1,
+.sp-selector-3:checked ~ .sp-arrow.sp-a2,
+.sp-selector-4:checked ~ .sp-arrow.sp-a3,
+.sp-selector-5:checked ~ .sp-arrow.sp-a4,
+.sp-selector-6:checked ~ .sp-arrow.sp-a5 {
+  left: 15px;
+  display: block;
+  background-position: top left;
+}
+.sp-slideshow input:checked ~ .sp-content {
+    -webkit-transition: background-position linear 0.6s, background-color linear 0.8s;
+    -moz-transition: background-position linear 0.6s, background-color linear 0.8s;
+    -o-transition: background-position linear 0.6s, background-color linear 0.8s;
+    -ms-transition: background-position linear 0.6s, background-color linear 0.8s;
+    transition: background-position linear 0.6s, background-color linear 0.8s;
+}
+
+.sp-slideshow input:checked ~ .sp-content .sp-parallax-bg {
+    -webkit-transition: background-position linear 0.7s;
+    -moz-transition: background-position linear 0.7s;
+    -o-transition: background-position linear 0.7s;
+    -ms-transition: background-position linear 0.7s;
+    transition: background-position linear 0.7s;
+}
+
+input.sp-selector-1:checked ~ .sp-content {
+    background-position: 0 0;
+  background-color: #E55B0A;
+}
+
+input.sp-selector-2:checked ~ .sp-content {
+    background-position: -100px 0;
+  background-color: #6e5494;
+}
+
+input.sp-selector-3:checked ~ .sp-content {
+    background-position: -200px 0;
+  background-color: #00a478;
+}
+
+input.sp-selector-4:checked ~ .sp-content {
+    background-position: -300px 0;
+  background-color: #55acee;
+}
+
+input.sp-selector-5:checked ~ .sp-content {
+    background-position: -400px 0;
+  background-color: #0077b5;
+}
+
+input.sp-selector-6:checked ~ .sp-content {
+    background-position: -500px 0;
+    background-color: #E55B0A;
+}
+
+input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {
+    background-position: 908px 0;
+}
+
+input.sp-selector-2:checked ~ .sp-content .sp-parallax-bg {
+    background-position: 0 0;
+}
+
+input.sp-selector-3:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -908px 0;
+}
+
+input.sp-selector-4:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -1816px 0;
+}
+
+input.sp-selector-5:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -2724px 0;
+}
+
+input.sp-selector-6:checked ~ .sp-content .sp-parallax-bg {
+    background-position: -3632px 0;
+}
+
+
+.sp-slider {
+  position: relative;
+  left: 0;
+  width: 600%;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+    /*-webkit-transition: left ease-in 0.8s;
+    -moz-transition: left ease-in 0.8s;
+    -o-transition: left ease-in 0.8s;
+    -ms-transition: left ease-in 0.8s;
+    transition: left ease-in 0.8s; 
+*/
+}
+
+.sp-slider > li {
+  color: #fff;
+  width: 16.6666666667%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0 60px;
+  float: left;
+  text-align: center;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sp-slider > li img{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  padding: 40px 0 50px 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+input.sp-selector-1:checked ~ .sp-content .sp-slider {
+    left: 0;
+}
+
+input.sp-selector-2:checked ~ .sp-content .sp-slider {
+    left: -100%;
+}
+
+input.sp-selector-3:checked ~ .sp-content .sp-slider {
+    left: -200%;
+}
+
+input.sp-selector-4:checked ~ .sp-content .sp-slider {
+    left: -300%;
+}
+
+input.sp-selector-5:checked ~ .sp-content .sp-slider {
+    left: -400%;
+}
+
+input.sp-selector-6:checked ~ .sp-content .sp-slider {
+    left: -500%;
+}
+input.sp-selector-1:checked ~ .sp-content .sp-slider > .soic:before,
+input.sp-selector-2:checked ~ .sp-content .sp-slider > .soic:before,
+input.sp-selector-3:checked ~ .sp-content .sp-slider > .soic:before,
+input.sp-selector-4:checked ~ .sp-content .sp-slider > .soic:before,
+input.sp-selector-5:checked ~ .sp-content .sp-slider > .soic:before,
+input.sp-selector-6:checked ~ .sp-content .sp-slider > .soic:before{
+  opacity: 1;
+  transition: opacity ease-out 0.4s 0.8s;
+  -webkit-transition: opacity ease-out 0.4s 0.8s;
+  -moz-transition: opacity ease-out 0.4s 0.8s;
+  -o-transition: opacity ease-out 0.4s 0.8s;
+  -ms-transition: opacity ease-out 0.4s 0.8s;
+    
+
 }
 @media (min-width: 768px) {
   .navbar-default {
@@ -161,7 +512,6 @@ header .header-content {
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
-  font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
@@ -170,12 +520,11 @@ header .header-content .header-content-inner hr {
   margin: 30px auto;
 }
 header .header-content .header-content-inner p {
-  font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   margin-bottom: 50px;
 }
-@media (min-width: 768px) {
+
   header {
     min-height: 100%;
   }
@@ -198,7 +547,7 @@ header .header-content .header-content-inner p {
     margin-left: auto;
     margin-right: auto;
   }
-}
+
 .section-heading {
   margin-top: 0;
 }
@@ -206,11 +555,63 @@ header .header-content .header-content-inner p {
   max-width: 400px;
   margin: 50px auto 0;
 }
-@media (min-width: 992px) {
-  .service-box {
-    margin: 20px auto 0;
-  }
+/*dibu parts*/
+@font-face {
+  font-family:'icomoon';
+  src:url("../fonts/icomoon.eot?-pm955s");
+  src:url("../fonts/icomoon.eot?#iefix-pm955s") format('embedded-opentype'),url("../fonts/icomoon.woff?-pm955s") format('woff'),url("../fonts/icomoon.ttf?-pm955s") format('truetype'),url("../fonts/icomoon.svg?-pm955s#icomoon") format('svg');
+  font-weight:normal;
+  font-style:normal
 }
+[class^="icon-"],[class*=" icon-"] {
+  font-family:'icomoon';
+  speak:none;
+  font-style:normal;
+  font-weight:normal;
+  font-variant:normal;
+  text-transform:none;
+  line-height:1;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
+}
+
+.Profile-link {
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    color: #D3D5B9;
+    margin-right: .5em;
+    padding: .7em 1em .4em;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1em;
+    min-width: 105px;
+}
+.Profile-link.twitter {
+  background:#00aced
+}
+.Profile-link.facebook {
+  background:#3b5998
+}
+.Profile-link.github {
+  background:#5f04b4
+}
+.Profile-link.linkedin {
+  background:#007bb6
+}
+.Profile-link.gplus {
+  background:#007bb6
+}
+.Profile-link.youtube {
+  background:#b00
+}
+.Profile-link.vine {
+  background:#00bf8f
+}
+@media (min-width: 992px) {
+.service-box {
+  margin: 20px auto 0;
+}
+
 .service-box p {
   margin-bottom: 0;
 }
@@ -258,13 +659,13 @@ header .header-content .header-content-inner p {
   opacity: 1;
 }
 @media (min-width: 768px) {
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    font-size: 16px;
-  }
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 22px;
-  }
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  font-size: 16px;
 }
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 22px;
+}
+
 .call-to-action h2 {
   margin: 0 auto 20px;
 }
@@ -401,72 +802,4 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
-}
-/*dibu parts*/
-@font-face {
-  font-family:'icomoon';
-  src:url("../fonts/icomoon.eot?-pm955s");
-  src:url("../fonts/icomoon.eot?#iefix-pm955s") format('embedded-opentype'),url("../fonts/icomoon.woff?-pm955s") format('woff'),url("../fonts/icomoon.ttf?-pm955s") format('truetype'),url("../fonts/icomoon.svg?-pm955s#icomoon") format('svg');
-  font-weight:normal;
-  font-style:normal
-}
-[class^="icon-"],[class*=" icon-"] {
-  font-family:'icomoon';
-  speak:none;
-  font-style:normal;
-  font-weight:normal;
-  font-variant:normal;
-  text-transform:none;
-  line-height:1;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale
-}
-.icon-gplus:before {
-  content:"\ea89  "
-}
-.icon-fb:before {
-  content:"\ea8d  "
-}
-.icon-twitter:before {
-  content:"\ea91  "
-}
-.icon-youtube:before {
-  content:"\ea97  "
-}
-.icon-github:before {
-  content:"\eab1  "
-}
-.icon-linkedin:before {
-  content:"\eac8  "
-}
-.Profile-link {
-  -webkit-border-radius:2em;
-  border-radius:2em;
-  color:#D3D5B9;
-  margin-right:.5em;
-  padding:.5em 1em;
-  text-decoration:none;
-  display:inline-block;
-  margin-bottom:1em;
-}
-.Profile-link.twitter {
-  background:#00aced
-}
-.Profile-link.facebook {
-  background:#3b5998
-}
-.Profile-link.github {
-  background:#5f04b4
-}
-.Profile-link.linkedin {
-  background:#007bb6
-}
-.Profile-link.gplus {
-  background:#007bb6
-}
-.Profile-link.youtube {
-  background:#b00
-}
-.Profile-link.vine {
-  background:#00bf8f
 }
