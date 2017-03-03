@@ -1,0 +1,356 @@
+/*
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ */
+@font-face {
+  font-family: "foundation-icons";
+  src: url("../foundation-icons/foundation-icons.eot");
+  src: url("../foundation-icons/foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("../foundation-icons/foundation-icons.woff") format("woff"),
+       url("../foundation-icons/foundation-icons.ttf") format("truetype"),
+       url("../foundation-icons/foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.fi-social-linkedin:before,
+.fi-social-facebook:before,
+.fi-social-twitter:before,
+.fi-social-github:before,
+.fi-social-youtube:before,
+.fi-list::before,
+.fi-x::before,
+.fi-layout::before,
+.fi-video::before,
+.fi-play-circle::before,
+.fi-photo::before,
+.fi-at-sign::before,
+.fi-address-book::before,
+.fi-torso-business::before,
+.fi-eye::before {
+    font-family: "foundation-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    text-decoration: inherit;
+    /* color: lightgrey; */
+}
+.fi-social-linkedin:before {
+    content: "\f1d0"; }
+.fi-social-twitter:before{
+    content: "\f1e4"; }
+.fi-social-facebook:before {
+    content: "\f1c4"; }
+.fi-social-github:before{
+    content: "\f1c9" }
+.fi-social-youtube:before{
+    content: "\f1ea" }
+.fi-list:before{
+    content: "\f169" }
+.fi-x:before{
+    content: "\f217" }
+.fi-layout::before{
+    content: "\f162" }
+.fi-play-circle::before{
+    content: "\f196" }
+.fi-video::before{
+    content: "\f20e" }
+.fi-photo::before{
+    content: "\f195" }
+.fi-at-sign::before{
+    content: "\f113" }
+.fi-address-book::before{
+    content: "\f100" }
+.fi-torso-business::before{
+    content: "\f1fc"
+}
+.fi-eye::before{
+    content: "\f147"
+}
+footer a{
+    color: white }
+h1{
+    font-family: "Fira Sans";
+}
+/* Variables */
+/* Samall Navegation */
+
+
+/* Hero section */
+.hero {
+    background: url("../img/keyvisual.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+ .logo{
+     margin-bottom: .3em;
+     font-size: 2rem;
+     color:white;
+ }
+.hero .brand{
+    margin-bottom: -19px;
+    font-size: 4.34em;
+    font-weight: lighter;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.slogan{
+    font-size: 1.4274em;
+    font-family: "Fira Sans";
+    font-weight: lighter;
+    color: #009bff;
+}
+.logo-icon {
+    margin: 7px;
+    max-width: 53px;
+}
+.hero .lead {
+    font-weight: lighter;
+    font-size: 1.6em;
+    line-height: 1.3;
+    font-family: "Fira Sans";
+    margin: 1em 0 4em;
+}
+.button.hollow.alert {
+    margin: 0 auto;
+    border: 1px solid #ff0058;
+    color: #ff0058;
+}
+/*End Hero section */
+
+.vine {
+    margin: 1rem 0;
+}
+/*Frontend portfolio*/
+.image-wrapper {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border-radius: 4px;
+}
+.image-overlay-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 2%
+}
+.overlay-slide-in-left img {
+  transition: all 0.3s ease-in-out;
+}
+.overlay-slide-in-left .image-overlay-content{
+  /*background-image: url(http://www.awwwards.com/awards/images/2015/04/pattern.jpg);*/
+  background: rgba(247,72,116,1);
+  background: -moz-linear-gradient(-45deg, rgba(247,72,116,1) 0%, rgba(255,0,48,1) 40%, rgba(255,0,48,1) 66%, rgba(199,20,85,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(247,72,116,1)), color-stop(40%, rgba(255,0,48,1)), color-stop(66%, rgba(255,0,48,1)), color-stop(100%, rgba(199,20,85,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(247,72,116,1) 0%, rgba(255,0,48,1) 40%, rgba(255,0,48,1) 66%, rgba(199,20,85,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(247,72,116,1) 0%, rgba(255,0,48,1) 40%, rgba(255,0,48,1) 66%, rgba(199,20,85,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(247,72,116,1) 0%, rgba(255,0,48,1) 40%, rgba(255,0,48,1) 66%, rgba(199,20,85,1) 100%);
+  background: linear-gradient(135deg, rgba(247,72,116,1) 0%, rgba(255,0,48,1) 40%, rgba(255,0,48,1) 66%, rgba(199,20,85,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f74874', endColorstr='#c71455', GradientType=1 );
+  transform: translateX(-110%);
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 7px #ccc; }
+.overlay-slide-in-left h3 {
+    margin: 0;
+    font-size: 1.33em;
+    font-weight: bolder;
+}
+.overlay-slide-in-left p {
+    opacity: 0;
+    transition: all 0.2s linear; }
+.overlay-slide-in-left .button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 14px;
+    background: #1c0a25;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    position: relative;
+    border-radius: 7px; }
+.overlay-slide-in-left .button:hover {
+    background-color: #444; }
+.overlay-slide-in-left:hover .image-overlay-content {
+    transform: translateX(0px); }
+.overlay-slide-in-left:hover img {
+    transform: translateX(80%);
+    transition-delay: 0.1s; }
+.overlay-slide-in-left:hover p {
+    opacity: 1;
+    transition-delay: 0.4s;
+    margin: 0 }
+.Frontend{
+    background-color: #0872db }
+.Margin-bottom-lead{
+    margin-bottom: 3em
+}
+  /*Frontend portfolio*/
+ /*Footer Contact*/
+ .Contact{
+     background-color: #1c0a25
+ }
+ .linkedin, .facebook, .twitter, .github, .youtube{
+    border-radius: 2px;
+    display: block;
+    height: 100%;
+    margin-top: 40%;
+    padding: 6% 0 3%;
+    width: 100%;
+}
+.twitter{
+    color: #00aced
+}
+.twitter:hover {
+    color: white;
+  background:#00aced }
+.facebook{
+    color: #2163ec;
+}
+.facebook:hover {
+    color: white;
+  background:#3b5998 }
+.github{
+    color: #9c36fb;
+}
+.github:hover {
+    color: white;
+    background:#5f04b4;
+}
+.linkedin{
+    color: #007bb6
+}
+.linkedin:hover {
+    color: white;
+  background:#007bb6 }
+  .gplus:hover {
+         color: white;
+  background:#007bb6 }
+.youtube{
+    color: #b00
+}
+.youtube:hover {
+    color: white;
+  background:#b00 }
+.vine:hover {
+    color: white;
+  background:#00bf8f }
+.linkedin:hover,
+.facebook:hover,
+.twitter:hover,
+.github:hover,
+.youtube:hover{
+    transition-duration: .8s;
+    transition-timing-function: cubic-bezier(0, 0.74, 0.9, 0.99);
+}
+ /*Footer Contact End*/
+
+/* nav */
+a {
+    color:#2e99ff }
+.tonioDisNav a{
+    font-family: "Fira Sans";
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin-left: 12px;
+}
+nav {
+    background-color: #1c0a25 !important }
+.top-bar-title.tonioDisNav {
+    background-color: #ff0030;
+    margin: 0;
+    padding: 8px;
+    }
+.top-bar-left.tonioDisNav{
+    background-color: rgba(7, 4, 27, 0.34);
+    box-shadow: inset 2px -3px 12px 0px #0a0316;
+    margin-top: 5em;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+li.tonioDisNav{
+    align-items: center;
+    -ms-flex-align: center;
+    padding-left: 27px;
+}
+li.tonioDisNav a{
+    width: 100%;
+}
+li.tonioDisNav:hover a{
+    color: white
+}
+li.tonioDisNav:hover{
+    background-color: #1c0a25;
+    box-shadow: 2px 1px 9px 1px rgba(4, 2, 19, 0.8);
+    }
+.nav-icon-size{
+    font-size: 2rem;
+    text-align: center;
+    width: 40px }
+li.tonioDisNav:hover .fi-layout::before{
+    color: rgb(0, 114, 255) }
+li.tonioDisNav:hover .fi-play-circle::before{
+    color: red }
+li.tonioDisNav:hover .fi-video::before{
+    color: red }
+li.tonioDisNav:hover .fi-eye::before{
+    color: green }
+li.tonioDisNav:hover .fi-at-sign::before{
+    color: rgb(0, 114, 255) }
+li.tonioDisNav:hover .fi-torso-business::before{
+    color: orange }
+/* nav */
+.full-height{
+    height: 100vh
+}
+.About{
+    background-color: #ff0030;
+}
+.Audiovisual{
+    background-color: #222222
+}
+.Shadows{
+    box-shadow: 1px 2px 12px 2px rgba(0, 0, 0, 0.4);
+}
+.Icon-title {
+    text-shadow: 2px 2px 4px #030331;
+    padding: 47px 1px;
+    background-color: #095ab7;
+    font-size: 3em;
+    border-radius: 50%;
+    font-weight: bolder;
+    box-shadow: inset 2px 2px 5px 2px rgba(7, 25, 59, 0.35);
+}
+/* Medium-Up Navigation */
+@media only screen and (min-width:40rem){
+  .logo-icon {
+    border-radius: 19px;
+    margin: 7px ;
+    max-width: 53px;
+  }
+  .logo-icon img {
+    border: white 4px solid;
+    border-radius: 6px;
+  }
+  .top-bar {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+  }
+  .top-bar ul{
+  background-color: transparent;
+  }
+  .hero h1{
+    font-size:8em;
+  }
+}
