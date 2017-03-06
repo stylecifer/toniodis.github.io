@@ -84,7 +84,7 @@ h1{
 .hero {
     background: url("../img/keyvisual.jpg") no-repeat center center;
     background-size: cover;
-    height: 100vh;
+    height: 86vh;
 }
  .logo{
      margin-bottom: .3em;
@@ -110,7 +110,7 @@ h1{
 }
 .hero .lead {
     font-weight: lighter;
-    font-size: 1.6em;
+    font-size: 100%;
     line-height: 1.3;
     font-family: "Fira Sans";
     margin: 1em 0 4em;
@@ -310,9 +310,6 @@ li.tonioDisNav:hover .fi-at-sign::before{
 li.tonioDisNav:hover .fi-torso-business::before{
     color: orange }
 /* nav */
-.full-height{
-    height: 100vh
-}
 .About{
     background-color: #ff0030;
 }
@@ -339,7 +336,6 @@ li.tonioDisNav:hover .fi-torso-business::before{
     max-width: 53px;
   }
   .logo-icon img {
-    border: white 4px solid;
     border-radius: 6px;
   }
   .top-bar {
@@ -352,5 +348,11 @@ li.tonioDisNav:hover .fi-torso-business::before{
   }
   .hero h1{
     font-size:8em;
+  }
+  .hero{
+    height: 100vh;
+  }
+  .full-height{
+      height: 100vh
   }
 }
