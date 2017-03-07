@@ -73,11 +73,14 @@
 }
 footer a{
     color: white }
-h1{
-    font-family: "Fira Sans";
+h1,
+h2,
+h3 {
+    font-family: "Fira Sans" !important;
 }
 body{
     color: rgba(255, 255, 255, 0.91);
+    font-family: "Fira Sans"
 }
 /* Variables */
 /* Samall Navegation */
@@ -203,7 +206,7 @@ body{
  .Contact{
      background-color: #1c0a25
  }
- .linkedin, .facebook, .twitter, .github, .youtube{
+.linkedin, .facebook, .twitter, .github, .youtube{
     border-radius: 2px;
     display: block;
     height: 100%;
@@ -234,10 +237,10 @@ body{
 }
 .linkedin:hover {
     color: white;
-  background:#007bb6 }
-  .gplus:hover {
-         color: white;
-  background:#007bb6 }
+    background:#007bb6 }
+.gplus:hover {
+    color: white;
+    background:#007bb6 }
 .youtube{
     color: #b00
 }
@@ -254,6 +257,12 @@ body{
 .youtube:hover{
     transition-duration: .8s;
     transition-timing-function: cubic-bezier(0, 0.74, 0.9, 0.99);
+}
+.social-toniodis{
+    margin: 2em 0 3em
+}
+.footer{
+    margin: 2em 0
 }
  /*Footer Contact End*/
 
@@ -356,5 +365,8 @@ li.tonioDisNav:hover .fi-torso-business::before{
   }
   .full-height{
       height: 100vh
+  }
+  .Margin-top{
+      margin-top: .67rem
   }
 }
