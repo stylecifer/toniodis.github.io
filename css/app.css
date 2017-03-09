@@ -98,17 +98,21 @@ body{
      color:white;
  }
 .hero .brand{
-    margin-bottom: -19px;
+    font-family: 'Fira Sans', sans-serif;
     font-size: 4.34em;
     font-weight: lighter;
-    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: -19px;
 }
 
 .slogan{
-    font-size: 1.4274em;
-    font-family: "Fira Sans";
-    font-weight: lighter;
     color: #009bff;
+    font-family: "Fira Sans";
+    font-size: .72em;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+.brand{
+    margin-bottom:-.3em
 }
 .logo-icon {
     margin: 7px;
@@ -345,7 +349,7 @@ li.tonioDisNav:hover .fi-torso-business::before{
 .small-margin-bottom{
     margin-bottom: 2em }
 /* Medium-Up Navigation */
-@media only screen and (min-width:40rem){
+@media only screen and (min-width:40em){
   .logo-icon {
     border-radius: 19px;
     margin: 7px ;
@@ -369,7 +373,7 @@ li.tonioDisNav:hover .fi-torso-business::before{
     height: 100vh;
   }
   .full-height{
-      height: 100vh
+      min-height: 100vh
   }
   .Margin-top{
       margin-top: .67rem
@@ -380,4 +384,10 @@ li.tonioDisNav:hover .fi-torso-business::before{
   .small-margin-bottom{
       margin-top: 0;
   }
+  .slogan{
+      font-size: 1.4274em;
+  }
+}
+@media screen and (max-width: 63.9375em) {
+
 }
