@@ -71,6 +71,9 @@
 .fi-eye::before{
     content: "\f147"
 }
+a {
+    color: #009bff;
+}
 footer a{
     color: white }
 h1,
@@ -271,10 +274,7 @@ body{
  /*Footer Contact End*/
 
 /* nav */
-a {
-    color:#2e99ff }
 .tonioDisNav a{
-    font-family: "Fira Sans";
     font-size: 1.2em;
     font-weight: lighter;
     margin-left: 12px;
@@ -301,9 +301,13 @@ li.tonioDisNav{
 li.tonioDisNav a{
     width: 100%;
 }
-li.tonioDisNav:hover a{
+li.tonioDisNav:hover a,
+.active,
+a.active:focus
+{
     color: white
 }
+
 li.tonioDisNav:hover{
     background-color: #1c0a25;
     box-shadow: 2px 1px 9px 1px rgba(4, 2, 19, 0.8);
@@ -348,6 +352,8 @@ li.tonioDisNav:hover .fi-torso-business::before{
 }
 .small-margin-bottom{
     margin-bottom: 2em }
+.js-off-canvas-overlay{
+    background-color: rgba(25, 20, 31, 0.78) }
 /* Medium-Up Navigation */
 @media only screen and (min-width:40em){
   .logo-icon {
