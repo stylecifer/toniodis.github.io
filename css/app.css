@@ -121,6 +121,70 @@ body{
     margin: 7px;
     max-width: 53px;
 }
+.Icon {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.Icon span {
+  display: block;
+  position: absolute;
+  left: 7px;
+  top: 21px;
+  height: 8px;
+  width: 67%;
+  background: rgb(172, 24, 52);
+  border-radius: 4px;
+  transform: rotate(0deg);
+  transition: .2s ease-in-out;
+}
+
+.Icon span:nth-child(1),
+.Icon span:nth-child(3) {
+  width: 48%;
+  transform: rotate(45deg);
+}
+
+.Icon span:nth-child(1) {
+  left: 8px;
+  top: 18px;
+}
+
+.Icon span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.Icon span:nth-child(3) {
+  left: 16px;
+  top: 23px;
+}
+
+.Icon.open span:nth-child(1),
+.Icon.open span:nth-child(3) {
+    left: 3px;
+}
+
+.Icon.open span:nth-child(1) {
+  top: 14px;
+  transform: rotate(135deg);
+}
+
+.Icon.open span:nth-child(2) {
+  transform: rotate(0deg);
+}
+
+.Icon.open span:nth-child(3) {
+  top: 29px;
+  transform: rotate(45deg);
+}
+:focus{
+    outline: none
+}
 .hero .lead {
     font-weight: lighter;
     font-size: 100%;
@@ -285,7 +349,14 @@ nav {
     background-color: #ff0030;
     margin: 0;
     padding: 8px;
-    }
+    align-items: center;
+}
+.my-name{
+    font-size: 1.8em;
+    margin-bottom: 0
+}
+.at-tonioDis{
+    margin-bottom: 0 }
 .top-bar-left.tonioDisNav{
     background-color: rgba(7, 4, 27, 0.34);
     box-shadow: inset 2px -3px 12px 0px #0a0316;
@@ -296,7 +367,7 @@ nav {
 li.tonioDisNav{
     align-items: center;
     -ms-flex-align: center;
-    padding-left: 27px;
+    padding-left: 18px;
 }
 li.tonioDisNav a{
     width: 100%;
@@ -394,6 +465,12 @@ li.tonioDisNav:hover .fi-torso-business::before{
       font-size: 1.4274em;
   }
 }
-@media screen and (max-width: 63.9375em) {
+@media screen and (min-width: 63.9375em) {
+    .position-right{
+        width: 319px;
+    }
+    .off-canvas-content{
+        margin-right: 69px
+    }
 
 }
