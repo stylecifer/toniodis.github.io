@@ -338,18 +338,72 @@ body{
  /*Footer Contact End*/
 
 /* nav */
+.hamburger {
+    width: 75px;
+}
+
+button.offcanvas-trigger {
+    cursor: pointer;
+}
+button.offcanvas-trigger.align-self-middle {
+    position: absolute;
+    transform: translateX(-40px) translateY(22px);
+}
+.off-canvas {
+    overflow: visible;
+    display:flex;
+    flex-flow:row wrap;
+    align-items: flex-end;
+}
+.is-open .hamburger .line:nth-child(1), .is-open .hamburger .line:nth-child(2) {
+  width: 20px;
+}
+
+.is-open .hamburger .line:nth-child(1) {
+  -webkit-transform: translateX(5px) rotate(45deg);
+  transform: translateX(5px) rotate(45deg);
+}
+.is-open .hamburger .line:nth-child(2) {
+  -webkit-transform: translateX(5px) rotate(-45deg);
+          transform: translateX(5px) rotate(-45deg);
+}
+.hamburger .line:nth-child(1) {
+  -webkit-transform: translateX(-5px) rotate(-45deg);
+          transform: translateX(-5px) rotate(-45deg);
+}
+.hamburger .line:nth-child(2) {
+  -webkit-transform: translateX(-5px) rotate(45deg);
+          transform: translateX(-5px) rotate(45deg);
+}
+.hamburger .line {
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  box-shadow: 4px 4px 6px 0px rgba(28, 10, 37, 0.38);
+  display: block;
+  height: 5px;
+  margin: -1px auto 6px;
+  transition: all 0.3s ease-in-out;
+  width: 20px;
+
+}
+.hamburger .line:last-child {
+  margin-bottom: 0;
+}
 .tonioDisNav a{
     font-size: 1.2em;
     font-weight: lighter;
-    margin-left: 12px;
+    /* margin-left: 12px; */
 }
 nav {
     background-color: #1c0a25 !important }
 .top-bar-title.tonioDisNav {
+    align-self: flex-start;
     background-color: #ff0030;
     margin: 0;
     padding: 8px;
     align-items: center;
+    height: 65px;
+    width: 100%;
 }
 .my-name{
     font-size: 1.8em;
@@ -360,17 +414,19 @@ nav {
 .top-bar-left.tonioDisNav{
     background-color: rgba(7, 4, 27, 0.34);
     box-shadow: inset 2px -3px 12px 0px #0a0316;
-    margin-top: 5em;
-    padding-bottom: 30px;
+    /* margin-top: 5em; */
+    /* padding-bottom: 30px; */
     padding-top: 30px;
+    height: 342px;
 }
 li.tonioDisNav{
     align-items: center;
     -ms-flex-align: center;
-    padding-left: 18px;
+    /* padding-left: 18px; */
 }
 li.tonioDisNav a{
     width: 100%;
+    line-height: 31px;
 }
 li.tonioDisNav:hover a,
 .active,
@@ -383,10 +439,12 @@ li.tonioDisNav:hover{
     background-color: #1c0a25;
     box-shadow: 2px 1px 9px 1px rgba(4, 2, 19, 0.8);
     }
-.nav-icon-size{
-    font-size: 2rem;
+.tonioDisNav .nav-icon-size{
+    margin-right: 15px;
+    font-size: 1.6em;
     text-align: center;
-    width: 40px }
+    width: 40px;
+    }
 li.tonioDisNav:hover .fi-layout::before{
     color: rgb(0, 114, 255) }
 li.tonioDisNav:hover .fi-play-circle::before{
@@ -399,6 +457,13 @@ li.tonioDisNav:hover .fi-at-sign::before{
     color: rgb(0, 114, 255) }
 li.tonioDisNav:hover .fi-torso-business::before{
     color: orange }
+.menu-arrow{
+    padding-top: 20px;
+    margin-top: 80px;
+    height: 70px;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
 /* nav */
 .About{
     background-color: #ff0030;
@@ -466,6 +531,13 @@ li.tonioDisNav:hover .fi-torso-business::before{
   }
 }
 @media screen and (min-width: 63.9375em) {
+    button.offcanvas-trigger.align-self-middle {
+      /* width: 40px; */
+      cursor: pointer;
+      height: 24px;
+      position: relative;
+      transform: initial;
+    }
     .position-right{
         width: 319px;
     }
