@@ -338,6 +338,16 @@ body{
  /*Footer Contact End*/
 
 /* nav */
+.position-right {
+  -webkit-transform: translateX(250px);
+
+}
+  .position-right.is-open ~ .off-canvas-content {
+    -webkit-transform: translateX(-250px);
+}
+  
+  .position-right.is-transition-overlap.is-open ~ .off-canvas-content {
+    -webkit-transform: none; }
 .hamburger {
     width: 75px;
 }
