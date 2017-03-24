@@ -118,7 +118,7 @@ body{
     margin-bottom:-.3em
 }
 .logo-icon {
-    margin: 7px;
+    margin: 7px 10px 7px 0;
     max-width: 53px;
 }
 .Icon {
@@ -247,15 +247,17 @@ body{
     opacity: 0;
     transition: all 0.2s linear; }
 .overlay-slide-in-left .button {
-    display: inline-block;
-    text-decoration: none;
+    margin-bottom: 0;
+    /* display: inline-block; */
+    /* text-decoration: none; */
     padding: 5px 14px;
     background: #1c0a25;
-    color: #fff;
+    /* color: #fff; */
     text-transform: uppercase;
     box-shadow: 0 0 1px #000;
-    position: relative;
-    border-radius: 7px; }
+    /* position: relative; */
+    border-radius: 7px;
+    }
 .overlay-slide-in-left .button:hover {
     background-color: #444; }
 .overlay-slide-in-left:hover .image-overlay-content {
@@ -351,7 +353,7 @@ body{
     -webkit-transform: translate(0, 0); }
 .position-right {
   -webkit-transform: translateX(250px);
-
+  transform:translateX(250px)
 }
   .position-right.is-open ~ .off-canvas-content {
     -webkit-transform: translateX(-250px);
@@ -415,13 +417,18 @@ button.offcanvas-trigger {
 .tonioDisNav a{
     font-size: 1.2em;
     font-weight: lighter;
-    /* margin-left: 12px; */
+    /* padding-left: 0; */
 }
 nav {
     background-color: #1c0a25 !important }
 .top-bar-title.tonioDisNav {
     align-self: flex-start;
-    background-color: #ff0030;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff0030+0,db0000+100 */
+    background: #ff0030; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ff0030 0%, #db0000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ff0030 0%,#db0000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ff0030 0%,#db0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0030', endColorstr='#db0000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     margin: 0;
     padding: 8px;
     align-items: center;
@@ -429,8 +436,8 @@ nav {
     width: 100%;
 }
 .my-name{
-    font-size: 1.8em;
-    margin-bottom: 0
+    font-size: 1.7em;
+    margin-bottom: 0;
 }
 .at-tonioDis{
     margin-bottom: 0 }
@@ -440,7 +447,7 @@ nav {
     /* margin-top: 5em; */
     /* padding-bottom: 30px; */
     padding-top: 30px;
-    height: 342px;
+    /* height: 342px; */
 }
 li.tonioDisNav{
     align-items: center;
@@ -450,6 +457,7 @@ li.tonioDisNav{
 li.tonioDisNav a{
     width: 100%;
     line-height: 31px;
+    padding-left: 13px;
 }
 li.tonioDisNav:hover a,
 .active,
@@ -482,7 +490,7 @@ li.tonioDisNav:hover .fi-torso-business::before{
     color: orange }
 .menu-arrow{
     /* padding-top: 20px; */
-    margin-top: 20%;
+    /* margin-top: 20%; */
     height: 60px;
     cursor: pointer;
     /* padding-bottom: 10px; */
@@ -517,7 +525,7 @@ li.tonioDisNav:hover .fi-torso-business::before{
 @media only screen and (min-width:40em){
   .logo-icon {
     border-radius: 19px;
-    margin: 7px ;
+    /* margin: 7px ; */
     max-width: 53px;
   }
   .logo-icon img {
@@ -554,18 +562,24 @@ li.tonioDisNav:hover .fi-torso-business::before{
   }
 }
 @media screen and (min-width: 63.9375em) {
+    .position-right.is-open ~ .off-canvas-content {
+    -webkit-transform: translateX(-185px);
+    transform:translateX(-185px)}
+
     button.offcanvas-trigger.align-self-middle {
       /* width: 40px; */
       cursor: pointer;
       height: 24px;
       position: relative;
-      transform: initial;
+      transform: translateX(5px);
     }
     .position-right{
-        width: 319px;
+  -webkit-transform: translateX(185px);
+  transform:translateX(185px)
+        /* width: 319px; */
     }
     .off-canvas-content{
-        margin-right: 69px
+        margin-right: 64px;
     }
 
 }
