@@ -1,14 +1,14 @@
 $(document).foundation()
-var icon = document.getElementById("icon");
-
-icon.onclick = function() {
-    if (this.className === "Icon") {
-        this.className = "Icon open";
-    }
-    else {
-        this.className = "Icon";
-    }
-};
+// var icon = document.getElementById("icon");
+//
+// icon.onclick = function() {
+//     if (this.className === "Icon") {
+//         this.className = "Icon open";
+//     }
+//     else {
+//         this.className = "Icon";
+//     }
+// };
     // $('#offCanvas a').on('click', function () {
     //     $('#offCanvas').foundation('close')
     // })

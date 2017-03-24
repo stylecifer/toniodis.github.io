@@ -360,15 +360,17 @@ body{
   .position-right.is-transition-overlap.is-open ~ .off-canvas-content {
     -webkit-transform: none; }
 .hamburger {
-    width: 75px;
+    width: 60px;
+    height: 60px;
+    background-color: #1c0a25;
+    border-radius:50%;
+    padding-top: 23px;
 }
 
 button.offcanvas-trigger {
     cursor: pointer;
-}
-button.offcanvas-trigger.align-self-middle {
     position: absolute;
-    transform: translateX(-40px) translateY(22px);
+    transform: translateX(-35px) translateY(0);
 }
 .off-canvas {
     overflow: visible;
@@ -479,11 +481,11 @@ li.tonioDisNav:hover .fi-at-sign::before{
 li.tonioDisNav:hover .fi-torso-business::before{
     color: orange }
 .menu-arrow{
-    padding-top: 20px;
-    margin-top: 80px;
-    height: 70px;
+    /* padding-top: 20px; */
+    margin-top: 20%;
+    height: 60px;
     cursor: pointer;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 /* nav */
 .About{
