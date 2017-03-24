@@ -338,6 +338,17 @@ body{
  /*Footer Contact End*/
 
 /* nav */
+.js-off-canvas-overlay{
+    -khtml-opacity: 0;
+    -webkit-visibility: hidden;
+}
+.js-off-canvas-overlay.is-visible {
+    -khtml-opacity: 1;
+    -webkit-visibility: visible; }
+.off-canvas.is-open {
+    -webkit-transform: translate(0, 0); }
+.off-canvas-absolute.is-open {
+    -webkit-transform: translate(0, 0); }
 .position-right {
   -webkit-transform: translateX(250px);
 
@@ -345,7 +356,7 @@ body{
   .position-right.is-open ~ .off-canvas-content {
     -webkit-transform: translateX(-250px);
 }
-  
+
   .position-right.is-transition-overlap.is-open ~ .off-canvas-content {
     -webkit-transform: none; }
 .hamburger {
