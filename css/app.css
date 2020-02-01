@@ -279,12 +279,19 @@ body{
  .Contact{
      background-color: #1c0a25
  }
-.linkedin, .facebook, .twitter, .github, .youtube{
+.linkedin, .facebook, .twitter, .github, .youtube, .instagram{
     border-radius: 2px;
     display: block;
     height: 100%;
     padding: 6% 0 3%;
     width: 100%;
+}
+.instagram{
+    color: #e1306c;
+}
+.instagram:hover{
+    color: white;
+    background-color: #e1306c
 }
 .twitter{
     color: #00aced
@@ -327,7 +334,8 @@ body{
 .facebook:hover,
 .twitter:hover,
 .github:hover,
-.youtube:hover{
+.youtube:hover,
+.instagram:hover{
     transition-duration: .8s;
     transition-timing-function: cubic-bezier(0, 0.74, 0.9, 0.99);
 }
